@@ -1,6 +1,6 @@
 # 🥃 NaufalNyaa SportEase | Ujian Akhir Semester - Pengenalan Pemrograman
 
-![Banner](banner.png)
+![Banner](Banner.png)
 
 ## 🌐 Deskripsi Singkat
 
