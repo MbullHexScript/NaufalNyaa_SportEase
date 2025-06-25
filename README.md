@@ -4,7 +4,7 @@
 
 ## 🌐 Deskripsi Singkat
 
-**Awiee Bar** adalah website landing page bergaya modern yang dirancang untuk menampilkan tampilan profesional dari sebuah Penyewaan tempat olahraga eksklusif. Tempat ini memiliki 6 arena olahraga yaitu Lapangan Futsal, Basket, minisoccer, kolam renang, Gym & Fitnes. menghadirkan suasana elegan dan berkelas bagi para pengunjungnya.
+**NaufalNyaa SportEase** adalah website landing page bergaya modern yang dirancang untuk menampilkan tampilan profesional dari sebuah Penyewaan tempat olahraga eksklusif. Tempat ini memiliki 6 arena olahraga yaitu Lapangan Futsal, Basket, minisoccer, kolam renang, Gym & Fitnes. menghadirkan suasana elegan dan berkelas bagi para pengunjungnya.
 
 ---
 
@@ -16,7 +16,7 @@
 ## 🔗 Live Preview
 
 > Klik tautan berikut untuk melihat langsung website-nya:
-🌍 [Lihat Website NaufalNyaa SportEase](https://mbullhexscript.github.io/Sports/)
+🌍 [Lihat Website NaufalNyaa SportEase](https://mbullhexscript.github.io/NaufalNyaa_SportEase/)
 
 ---
 
@@ -40,9 +40,9 @@
 
 ## 📜 Lisensi
 
-Proyek ini dibuat untuk kepentingan edukasi sebagai bagian dari Konten Youtube dan tidak untuk tujuan komersial.
+Proyek ini dibuat untuk kepentingan edukasi sebagai bagian dari Ujian Akhir Semester dan tidak untuk tujuan komersial.
 
 ---
 
 **Terima kasih atas bimbingan dan ilmunya selama satu semester penuh 🙏**
-_— Mbull Gacor_
+_— NaufalNyaa_
