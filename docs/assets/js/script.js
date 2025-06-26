@@ -181,7 +181,7 @@ Mohon informasi:
 
 Terima kasih! 🏃‍♂️`;
             
-            const whatsappURL = `https://wa.me/6289533736447?text=${encodeURIComponent(pesanBooking)}`;
+            const whatsappURL = `https://wa.me/62895337364474?text=${encodeURIComponent(pesanBooking)}`;
             window.open(whatsappURL, '_blank');
             
             // Show notification
@@ -207,7 +207,7 @@ Mohon informasi lebih lanjut mengenai:
 
 Terima kasih! 💪`;
             
-            const whatsappURL = `https://wa.me/6289533736447?text=${encodeURIComponent(pesanMember)}`;
+            const whatsappURL = `https://wa.me/62895337364474?text=${encodeURIComponent(pesanMember)}`;
             window.open(whatsappURL, '_blank');
             
             // Show notification
