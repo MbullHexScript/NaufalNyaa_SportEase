@@ -1,7 +1,7 @@
 /* Header Author */
 .header-author {
-    padding: 120px 0 60px;
-    background: linear-gradient(135deg, rgba(64, 224, 208, 0.1) 0%, rgba(255, 255, 255, 0.9) 100%);
+    padding: 100px 0 50px;
+    background: linear-gradient(135deg, rgba(64, 224, 208, 0.03) 0%, rgba(255, 255, 255, 1) 100%);
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -10,28 +10,28 @@
 .header-author::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="c" cx="50%" cy="50%"><stop offset="0%" stop-color="%2340e0d0" stop-opacity="0.1"/><stop offset="100%" stop-color="%2340e0d0" stop-opacity="0"/></radialGradient></defs><circle cx="300" cy="300" r="400" fill="url(%23c)"/><circle cx="700" cy="700" r="300" fill="url(%23c)"/></svg>');
-    z-index: -1;
+    top: -30%;
+    right: -15%;
+    width: 40%;
+    height: 80%;
+    background: radial-gradient(circle, rgba(64, 224, 208, 0.04) 0%, transparent 70%);
+    z-index: 0;
 }
 
 .container-header-author {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 30px;
     position: relative;
     z-index: 2;
 }
 
 .header-author h1 {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     color: #2c3e50;
-    margin-bottom: 20px;
-    font-weight: 800;
-    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
 }
 
 .header-author .highlight {
@@ -39,31 +39,31 @@
 }
 
 .header-author p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: #64748b;
     max-width: 600px;
     margin: 0 auto;
-    line-height: 1.7;
+    line-height: 1.6;
 }
 
 /* Bagian Author */
 .bagian-author {
-    padding: 100px 0;
+    padding: 80px 0;
     background: white;
 }
 
 .container-author {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 .profil-author {
     display: grid;
-    grid-template-columns: 400px 1fr;
-    gap: 80px;
+    grid-template-columns: 350px 1fr;
+    gap: 60px;
     align-items: start;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .foto-author {
@@ -77,34 +77,34 @@
 }
 
 .foto-author img {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
     object-fit: cover;
-    border: 6px solid #40e0d0;
-    box-shadow: 0 25px 60px rgba(64, 224, 208, 0.3);
-    transition: all 0.3s ease;
+    border: 4px solid rgba(64, 224, 208, 0.2);
+    box-shadow: 0 12px 30px rgba(64, 224, 208, 0.15);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .foto-author img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 35px 80px rgba(64, 224, 208, 0.4);
+    transform: scale(1.02);
+    box-shadow: 0 20px 40px rgba(64, 224, 208, 0.2);
 }
 
 .status-online {
-    margin-top: 24px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 10px;
     color: #10b981;
-    font-weight: 600;
-    font-size: 1.1rem;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 .dot-online {
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
     background: #10b981;
     border-radius: 50%;
     animation: pulse 2s infinite;
@@ -115,7 +115,7 @@
         box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
     }
     70% {
-        box-shadow: 0 0 0 15px rgba(16, 185, 129, 0);
+        box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
     }
     100% {
         box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
@@ -123,106 +123,107 @@
 }
 
 .info-author h1 {
-    font-size: 3.2rem;
+    font-size: 2.6rem;
     color: #2c3e50;
-    margin-bottom: 12px;
-    font-weight: 800;
-    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
 }
 
 .nim {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #40e0d0;
-    font-weight: 700;
-    margin-bottom: 24px;
-    padding: 8px 16px;
-    background: rgba(64, 224, 208, 0.1);
-    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 6px 14px;
+    background: rgba(64, 224, 208, 0.08);
+    border-radius: 6px;
     display: inline-block;
 }
 
 .deskripsi {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #64748b;
-    line-height: 1.8;
-    margin-bottom: 40px;
+    line-height: 1.7;
+    margin-bottom: 32px;
 }
 
 .detail-info {
     display: grid;
-    gap: 24px;
+    gap: 20px;
 }
 
 .info-item {
-    padding: 20px;
-    background: rgba(64, 224, 208, 0.05);
-    border-radius: 15px;
-    border-left: 4px solid #40e0d0;
-    transition: all 0.3s ease;
+    padding: 18px;
+    background: rgba(64, 224, 208, 0.03);
+    border-radius: 10px;
+    border-left: 3px solid #40e0d0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .info-item:hover {
-    background: rgba(64, 224, 208, 0.1);
-    transform: translateX(5px);
+    background: rgba(64, 224, 208, 0.06);
+    transform: translateX(4px);
 }
 
 .info-item h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #2c3e50;
-    margin-bottom: 8px;
-    font-weight: 700;
+    margin-bottom: 6px;
+    font-weight: 600;
 }
 
 .info-item p {
     color: #64748b;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin: 0;
 }
 
 /* Bagian Hobi */
 .bagian-hobi {
-    padding: 100px 0;
-    background: linear-gradient(135deg, rgba(64, 224, 208, 0.03) 0%, rgba(255, 255, 255, 1) 100%);
+    padding: 80px 0;
+    background: rgba(64, 224, 208, 0.015);
 }
 
 .container-hobi {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 30px;
     text-align: center;
 }
 
 .container-hobi h2 {
-    font-size: 3rem;
+    font-size: 2.4rem;
     color: #2c3e50;
-    margin-bottom: 20px;
-    font-weight: 800;
-    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
 }
 
 .container-hobi .subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #64748b;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.6;
 }
 
 .grid-hobi {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 50px;
 }
 
 .kartu-hobi {
     background: white;
-    padding: 40px 30px;
-    border-radius: 25px;
-    box-shadow: 0 15px 50px rgba(64, 224, 208, 0.08);
-    transition: all 0.3s ease;
-    border: 1px solid rgba(64, 224, 208, 0.1);
+    padding: 32px 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(64, 224, 208, 0.06);
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -234,97 +235,105 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
+    height: 2px;
     background: linear-gradient(135deg, #40e0d0 0%, #20b2aa 100%);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.kartu-hobi:hover::before {
+    transform: scaleX(1);
 }
 
 .kartu-hobi:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 30px 80px rgba(64, 224, 208, 0.15);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(64, 224, 208, 0.12);
 }
 
 .ikon-hobi {
-    font-size: 4rem;
-    margin-bottom: 24px;
+    font-size: 3.2rem;
+    margin-bottom: 20px;
     display: block;
+    opacity: 0.9;
 }
 
 .kartu-hobi h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #2c3e50;
-    margin-bottom: 16px;
-    font-weight: 700;
+    margin-bottom: 12px;
+    font-weight: 600;
 }
 
 .kartu-hobi p {
     color: #64748b;
-    line-height: 1.7;
-    font-size: 1rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
 }
 
 /* Bagian Keahlian */
 .bagian-keahlian {
-    padding: 100px 0;
+    padding: 80px 0;
     background: white;
 }
 
 .container-keahlian {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 .container-keahlian h2 {
-    font-size: 3rem;
+    font-size: 2.4rem;
     color: #2c3e50;
-    margin-bottom: 20px;
-    font-weight: 800;
-    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
     text-align: center;
 }
 
 .container-keahlian .subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #64748b;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    line-height: 1.6;
 }
 
 .keahlian-kategori {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .keahlian-kategori h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #2c3e50;
-    margin-bottom: 30px;
-    font-weight: 700;
+    margin-bottom: 24px;
+    font-weight: 600;
     text-align: left;
 }
 
 .skill-item {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    padding: 15px 0;
+    margin-bottom: 16px;
+    padding: 12px 0;
 }
 
 .skill-name {
-    min-width: 150px;
-    font-weight: 600;
+    min-width: 140px;
+    font-weight: 500;
     color: #2c3e50;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .skill-bar-container {
     flex: 1;
-    height: 12px;
+    height: 8px;
     background: rgba(64, 224, 208, 0.1);
-    border-radius: 10px;
-    margin: 0 20px;
+    border-radius: 6px;
+    margin: 0 16px;
     overflow: hidden;
     position: relative;
 }
@@ -332,8 +341,8 @@
 .skill-bar {
     height: 100%;
     background: linear-gradient(135deg, #40e0d0 0%, #20b2aa 100%);
-    border-radius: 10px;
-    transition: width 2s ease-in-out;
+    border-radius: 6px;
+    transition: width 2s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
 }
 
@@ -354,61 +363,62 @@
 }
 
 .skill-percentage {
-    min-width: 50px;
+    min-width: 45px;
     text-align: right;
-    font-weight: 700;
+    font-weight: 600;
     color: #40e0d0;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 /* Bagian Sosial */
 .bagian-sosial {
-    padding: 100px 0;
-    background: linear-gradient(135deg, rgba(64, 224, 208, 0.03) 0%, rgba(255, 255, 255, 1) 100%);
+    padding: 80px 0;
+    background: rgba(64, 224, 208, 0.015);
 }
 
 .container-sosial {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 30px;
     text-align: center;
 }
 
 .container-sosial h2 {
-    font-size: 3rem;
+    font-size: 2.4rem;
     color: #2c3e50;
-    margin-bottom: 20px;
-    font-weight: 800;
-    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
 }
 
 .container-sosial .subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #64748b;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.6;
 }
 
 .grid-sosial {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
-    margin-top: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    margin-top: 50px;
 }
 
 .kartu-sosial {
     background: white;
-    padding: 30px;
-    border-radius: 25px;
-    box-shadow: 0 15px 50px rgba(64, 224, 208, 0.08);
-    transition: all 0.3s ease;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 24px;
-    border: 1px solid rgba(64, 224, 208, 0.1);
+    gap: 20px;
+    border: 1px solid rgba(64, 224, 208, 0.06);
     position: relative;
     overflow: hidden;
 }
@@ -419,25 +429,31 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
+    height: 2px;
     background: linear-gradient(135deg, #40e0d0 0%, #20b2aa 100%);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.kartu-sosial:hover::before {
+    transform: scaleX(1);
 }
 
 .kartu-sosial:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 25px 70px rgba(64, 224, 208, 0.15);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(64, 224, 208, 0.12);
     text-decoration: none;
 }
 
 .ikon-sosial {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .kartu-sosial.github .ikon-sosial {
@@ -456,7 +472,7 @@
 }
 
 .kartu-sosial:hover .ikon-sosial {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .info-sosial {
@@ -465,27 +481,27 @@
 }
 
 .info-sosial h3 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: #2c3e50;
-    margin-bottom: 6px;
-    font-weight: 700;
+    margin-bottom: 4px;
+    font-weight: 600;
 }
 
 .info-sosial p {
     color: #40e0d0;
-    font-size: 1.1rem;
-    margin-bottom: 6px;
-    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 4px;
+    font-weight: 500;
 }
 
 .info-sosial span {
     color: #64748b;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 /* Bagian Quote */
 .bagian-quote {
-    padding: 100px 0;
+    padding: 80px 0;
     background: linear-gradient(135deg, #40e0d0 0%, #20b2aa 100%);
     text-align: center;
     position: relative;
@@ -495,49 +511,49 @@
 .bagian-quote::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="d" cx="50%" cy="50%"><stop offset="0%" stop-color="white" stop-opacity="0.1"/><stop offset="100%" stop-color="white" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="200" r="300" fill="url(%23d)"/><circle cx="800" cy="800" r="400" fill="url(%23d)"/></svg>');
+    top: -30%;
+    left: -15%;
+    width: 40%;
+    height: 80%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
     z-index: 1;
 }
 
 .container-quote {
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 30px;
     position: relative;
     z-index: 2;
 }
 
 .container-quote blockquote {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     color: white;
     font-style: italic;
-    line-height: 1.6;
+    line-height: 1.5;
     margin: 0;
     position: relative;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .container-quote blockquote::before {
     content: '"';
-    font-size: 5rem;
+    font-size: 4rem;
     position: absolute;
-    top: -30px;
-    left: -40px;
+    top: -20px;
+    left: -30px;
     opacity: 0.3;
     font-family: serif;
 }
 
 .container-quote cite {
     display: block;
-    margin-top: 30px;
-    font-size: 1.3rem;
+    margin-top: 24px;
+    font-size: 1.1rem;
     color: rgba(255, 255, 255, 0.9);
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* Animasi */
@@ -549,24 +565,24 @@
 
 .kartu-hobi:nth-child(even),
 .kartu-sosial:nth-child(even) {
-    animation-delay: 0.2s;
+    animation-delay: 0.1s;
 }
 
 .kartu-hobi:nth-child(3n),
 .kartu-sosial:nth-child(3n) {
-    animation-delay: 0.4s;
-}
-
-.skill-item:nth-child(2n) {
-    animation-delay: 0.1s;
-}
-
-.skill-item:nth-child(3n) {
     animation-delay: 0.2s;
 }
 
+.skill-item:nth-child(2n) {
+    animation-delay: 0.05s;
+}
+
+.skill-item:nth-child(3n) {
+    animation-delay: 0.1s;
+}
+
 .skill-item:nth-child(4n) {
-    animation-delay: 0.3s;
+    animation-delay: 0.15s;
 }
 
 /* Intersection Observer untuk Skill Bars */

@@ -1,7 +1,7 @@
 /* Header Booking */
 .header-booking {
-    padding: 120px 0 60px;
-    background: linear-gradient(135deg, rgba(64, 224, 208, 0.1) 0%, rgba(255, 255, 255, 0.9) 100%);
+    padding: 100px 0 50px;
+    background: linear-gradient(135deg, rgba(64, 224, 208, 0.03) 0%, rgba(255, 255, 255, 1) 100%);
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -10,28 +10,28 @@
 .header-booking::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="c" cx="50%" cy="50%"><stop offset="0%" stop-color="%2340e0d0" stop-opacity="0.1"/><stop offset="100%" stop-color="%2340e0d0" stop-opacity="0"/></radialGradient></defs><circle cx="300" cy="300" r="400" fill="url(%23c)"/><circle cx="700" cy="700" r="300" fill="url(%23c)"/></svg>');
-    z-index: -1;
+    top: -30%;
+    right: -15%;
+    width: 40%;
+    height: 80%;
+    background: radial-gradient(circle, rgba(64, 224, 208, 0.04) 0%, transparent 70%);
+    z-index: 0;
 }
 
 .container-header-booking {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 30px;
     position: relative;
     z-index: 2;
 }
 
 .header-booking h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: #2c3e50;
-    margin-bottom: 20px;
-    font-weight: 800;
-    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
 }
 
 .header-booking .highlight {
@@ -39,11 +39,11 @@
 }
 
 .header-booking p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: #64748b;
     max-width: 600px;
     margin: 0 auto;
-    line-height: 1.7;
+    line-height: 1.6;
 }
 
 /* Bagian Booking */
@@ -55,22 +55,22 @@
 .container-booking {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 .grid-tempat-olahraga {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 40px;
+    gap: 30px;
 }
 
 .kartu-tempat-olahraga {
     background: white;
-    border-radius: 25px;
+    border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 15px 50px rgba(64, 224, 208, 0.08);
-    transition: all 0.3s ease;
-    border: 1px solid rgba(64, 224, 208, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(64, 224, 208, 0.06);
     position: relative;
 }
 
@@ -80,13 +80,19 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
+    height: 2px;
     background: linear-gradient(135deg, #40e0d0 0%, #20b2aa 100%);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.kartu-tempat-olahraga:hover::before {
+    transform: scaleX(1);
 }
 
 .kartu-tempat-olahraga:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 30px 80px rgba(64, 224, 208, 0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(64, 224, 208, 0.15);
 }
 
 .gambar-tempat {
@@ -96,9 +102,9 @@
 
 .gambar-tempat img {
     width: 100%;
-    height: 250px;
+    height: 220px;
     object-fit: cover;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .kartu-tempat-olahraga:hover .gambar-tempat img {
@@ -107,45 +113,45 @@
 
 .label-harga {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 16px;
+    right: 16px;
     background: linear-gradient(135deg, #40e0d0 0%, #20b2aa 100%);
     color: white;
-    padding: 8px 16px;
-    border-radius: 20px;
+    padding: 6px 12px;
+    border-radius: 6px;
     font-weight: 600;
-    font-size: 1rem;
-    box-shadow: 0 5px 15px rgba(64, 224, 208, 0.3);
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(64, 224, 208, 0.3);
 }
 
 .konten-kartu {
-    padding: 30px;
+    padding: 24px;
 }
 
 .konten-kartu h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #2c3e50;
-    margin-bottom: 15px;
-    font-weight: 700;
+    margin-bottom: 12px;
+    font-weight: 600;
 }
 
 .konten-kartu p {
     color: #64748b;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     line-height: 1.6;
-    font-size: 1rem;
+    font-size: 0.95rem;
 }
 
 .fitur-tempat {
     list-style: none;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .fitur-tempat li {
     color: #64748b;
-    margin-bottom: 8px;
-    font-size: 0.95rem;
-    padding-left: 5px;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    padding-left: 4px;
 }
 
 .fitur-tempat li::before {
@@ -160,64 +166,65 @@
     background: linear-gradient(135deg, #40e0d0 0%, #20b2aa 100%);
     color: white;
     border: none;
-    padding: 15px 25px;
-    border-radius: 50px;
-    font-size: 1.1rem;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 25px rgba(64, 224, 208, 0.3);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(64, 224, 208, 0.25);
 }
 
 .tombol-booking:hover {
     background: linear-gradient(135deg, #20b2aa 0%, #008b8b 100%);
-    transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(64, 224, 208, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(64, 224, 208, 0.35);
 }
 
 /* Info Booking */
 .bagian-info-booking {
     padding: 80px 0;
-    background: linear-gradient(135deg, rgba(64, 224, 208, 0.03) 0%, rgba(255, 255, 255, 1) 100%);
+    background: rgba(64, 224, 208, 0.015);
 }
 
 .container-info-booking {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 30px;
     text-align: center;
 }
 
 .container-info-booking h2 {
-    font-size: 3rem;
+    font-size: 2.4rem;
     color: #2c3e50;
-    margin-bottom: 20px;
-    font-weight: 800;
-    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
 }
 
 .container-info-booking .subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #64748b;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.6;
 }
 
 .grid-info-booking {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
+    gap: 30px;
 }
 
 .kartu-info {
     background: white;
-    padding: 40px 30px;
-    border-radius: 25px;
-    box-shadow: 0 15px 50px rgba(64, 224, 208, 0.08);
-    transition: all 0.3s ease;
-    border: 1px solid rgba(64, 224, 208, 0.1);
+    padding: 32px 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(64, 224, 208, 0.06);
     position: relative;
     overflow: hidden;
 }
@@ -228,26 +235,32 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
+    height: 2px;
     background: linear-gradient(135deg, #40e0d0 0%, #20b2aa 100%);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.kartu-info:hover::before {
+    transform: scaleX(1);
 }
 
 .kartu-info:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 25px 70px rgba(64, 224, 208, 0.15);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(64, 224, 208, 0.12);
 }
 
 .kartu-info h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #2c3e50;
-    margin-bottom: 16px;
-    font-weight: 700;
+    margin-bottom: 12px;
+    font-weight: 600;
 }
 
 .kartu-info p {
     color: #64748b;
-    font-size: 1rem;
-    line-height: 1.7;
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 /* Animasi */
@@ -256,11 +269,11 @@
 }
 
 .kartu-tempat-olahraga:nth-child(even) {
-    animation-delay: 0.2s;
+    animation-delay: 0.1s;
 }
 
 .kartu-tempat-olahraga:nth-child(3n) {
-    animation-delay: 0.4s;
+    animation-delay: 0.2s;
 }
 
 .kartu-info {
@@ -268,13 +281,13 @@
 }
 
 .kartu-info:nth-child(2n) {
-    animation-delay: 0.1s;
+    animation-delay: 0.05s;
 }
 
 .kartu-info:nth-child(3n) {
-    animation-delay: 0.2s;
+    animation-delay: 0.1s;
 }
 
 .kartu-info:nth-child(4n) {
-    animation-delay: 0.3s;
+    animation-delay: 0.15s;
 }
